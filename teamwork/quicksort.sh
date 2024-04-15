@@ -5,5 +5,4 @@ gcc -g -static -DTEST -o quicksort partition.o quicksort.o quicksort-main.c
 for i in {1..25}; do
     echo $i
     ./quicksort
-    sleep 0.3s
 done

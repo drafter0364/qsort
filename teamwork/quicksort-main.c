@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/time.h>
-#include <time.h>
 
 #define MAX_SIZE 10000
 #define LB (0 - MAX_SIZE << 2) 
@@ -43,7 +42,7 @@ void check(int test[], int trust[], int size)
 	for(int i = 0; i < size; i++) {
 		if(test[i] != trust[i]) {
 			printf("ARR[%d] SHOULD BE %d, BUT GOT %d.\n", i, trust[i], test[i]);	
-			printf("TEST FALIED\n");
+			printf("TEST FAILED\n");
 			return;
 		}
 	}
